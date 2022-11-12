@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    margin: 0;
+    overflow: hidden;
+    width: 100vw;
+}
+
+header {
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    height: 60px;
+    margin: 0;
+}
+
+nav {
+    width: 100vw;
+    background-color: #82ccdd;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.principal {
+    width: 100px;
+    text-align: center;
+}
+
+.menu-horizontal {
+    list-style: none;
+}
+
+.menu-horizontal>li>a {
+    color: #fff;
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.menu-horizontal>li:hover {
+    background-color: #fff;
+}
+
+.menu-vertical {
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: red;
+    font-size: 20px;
+}
+
+.menu-horizontal li:hover .menu-vertical {
+    display: block;
+}
+
+.menu-vertical li:hover {
+    background-color: #000;
+}
+
+.menu-vertical li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 15px 15px 20px;
+}
+
+.encabezado {
+    margin-top: 20px;
+    align-items: center;
+    display: flex;
+    height: 40px;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.tab {
+    padding-right: 72.4%;
+}
+
+.tab-actividad {
+    padding-right: 62.5%;
+}
+
+.tab-ayuno {
+    padding-right: 71%;
+}
+
+.tab-recetas {
+    padding-right: 70%;
+}
+
+.tab-objetivos {
+    padding-right: 68%;
+}
+
+.tab-pesos {
+    padding-right: 71.8%;
+}
+
+.tipo {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.logo {
+    padding-right: 100px;
+}
+
+.fast {
+    font-size: 36px;
+    font-weight: 800;
+}
+
+
+/*Para Celular*/
+
+@media all and (max-width: 320px) {
+    .encabezado {
+        display: block;
+        left: 0;
+        margin-left: 10%;
+        width: 100%;
+        top: 0;
+    }
+    .tipo {
+        display: none;
+    }
+    .fast {
+        display: flex;
+        font-size: 24px;
+        font-weight: 800;
+    }
+}
